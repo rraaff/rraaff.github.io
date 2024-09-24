@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Camino de Vida</title>
+    <script>
+        function calcularCaminoDeVida() {
+            // Obtener los valores de los campos
+            var nombres = document.getElementById('nombres').value;
+            var apellidoPaterno = document.getElementById('apellidoPaterno').value;
+            var apellidoMaterno = document.getElementById('apellidoMaterno').value;
+            var diaNacimiento = document.getElementById('diaNacimiento').value;
+            var mesNacimiento = document.getElementById('mesNacimiento').value;
+            var anioNacimiento = document.getElementById('anioNacimiento').value;
+            
+            // Aquí puedes agregar la lógica para calcular el Camino de Vida
+            // De momento solo mostramos los valores obtenidos como ejemplo
+            alert("Nombres: " + nombres + 
+                  "\nApellido Paterno: " + apellidoPaterno + 
+                  "\nApellido Materno: " + apellidoMaterno + 
+                  "\nFecha de Nacimiento: " + diaNacimiento + "/" + mesNacimiento + "/" + anioNacimiento);
+        }
+    </script>
+</head>
+<body>
+    <h1>Formulario para calcular Camino de Vida</h1>
+    <form>
+        <label for="nombres">Nombres:</label><br>
+        <input type="text" id="nombres" name="nombres"><br><br>
+
+        <label for="apellidoPaterno">Apellido Paterno:</label><br>
+        <input type="text" id="apellidoPaterno" name="apellidoPaterno"><br><br>
+
+        <label for="apellidoMaterno">Apellido Materno:</label><br>
+        <input type="text" id="apellidoMaterno" name="apellidoMaterno"><br><br>
+
+        <label for="diaNacimiento">Día de Nacimiento:</label><br>
+        <input type="number" id="diaNacimiento" name="diaNacimiento"><br><br>
+
+        <label for="mesNacimiento">Mes de Nacimiento:</label><br>
+        <input type="number" id="mesNacimiento" name="mesNacimiento"><br><br>
+
+        <label for="anioNacimiento">Año de Nacimiento:</label><br>
+        <input type="number" id="anioNacimiento" name="anioNacimiento"><br><br>
+
+        <button type="button" onclick="calcularCaminoDeVida()">Calcular</button>
+    </form>
+</body>
+</html>
